@@ -14,25 +14,29 @@
         <title>Weather Map</title>
     </head>
     <body>
+
+
         <div> <!-- container for everything -->
-            <div id="forecastContainer"> <!-- container for forecast -->
+            <div id="city"></div>
+
+            <div id="forecastContainer" class="row flex-nowrap justify-content-center"> <!-- container
+            for forecast -->
 
             </div>
-            <div id="mapboxContainer"> <!-- container for mapbox -->
-                <div id="map" style="height: 700px; width: 900px"></div>
+            <div id="mapboxContainer" class="justify-content-center"> <!-- container
+            for mapbox -->
+                <div id="map" style="height: 700px; width: 900px" class="m-auto"></div>
             </div>
         </div>
+
+        <script src="assets/JQuery/jquery-2.2.4.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
                 crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-                crossorigin="anonymous"></script>
         <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
-        <script src="assets/JQuery/jquery-2.2.4.js"></script>
-        <script src="assets/apis/keys.js"></script>
 
+        <script src="assets/apis/keys.js"></script>
         <script src="js/weathermap-utils.js"></script>
         <script src="js/mapbox-utils.js"></script>
         <script src="js/jquery-utils.js"></script>
